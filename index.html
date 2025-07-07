@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+  <link rel="stylesheet" href="./styles.css" />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StellarVision — Eksplorasi Galaksi Tanpa Batas</title>
+    <meta name="description" content="Web eksplorasi luar angkasa, galaksi, misi roket, dan visual supernova paling lengkap untuk generasi muda. Bergabunglah dalam petualangan kosmik bersama Wahyu!" />
+    <meta name="keywords" content="NASA, luar angkasa, galaksi, planet, roket, astronomi, supernova, eksplorasi antariksa" />
+    <meta name="author" content="Wahyu - Space Explorer" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="StellarVision — Eksplorasi Galaksi Tanpa Batas" />
+    <meta property="og:description" content="Portal eksplorasi luar angkasa terlengkap dengan visual spektakuler dan pengetahuan kosmik mendalam" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' fontSize='90'>🚀</text></svg>" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="space-background">
+      <div class="stars-container" id="starsContainer"></div>
+      <div class="planet planet-1"></div>
+      <div class="planet planet-2"></div>
+      <div class="comet" id="comet"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-icon">🛰️</div>
+          <span class="logo-text">StellarVision</span>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link">Portal</a>
+          <a href="#about" class="nav-link">Penjelajah</a>
+          <a href="#exploration" class="nav-link">Eksplorasi</a>
+          <a href="#gallery" class="nav-link">Galeri Kosmik</a>
+          <a href="#timeline" class="nav-link">Timeline Misi</a>
+          <a href="#contact" class="nav-link">Base Station</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="mission-badge">🚀 Misi Aktif : Eksplorasi Galaksi Bima Sakti</div>
+        <h1 class="hero-title">
+          <span class="gradient-text">Siap Jelajah Galaksi</span>
+          <span class="gradient-text">Bersama Wahyu?</span>
+        </h1>
+        <p class="hero-subtitle">
+          Masuki Zona Anti-Gravitasi, Semua Dimulai di Sini.<br />
+          Buka Portal Pengetahuan Antariksa & Masa Depan.
+        </p>
+
+          <a href="https://eyes.nasa.gov/apps/solar-system/#/home" target="_blank" class="btn btn-primary">
+            <span class="btn-icon">🚀</span>
+            Mulai Eksplorasi
+          </a>
+
+          <a href="https://www.nasa.gov/live/" target="_blank" class="btn btn-secondary">
+            <span class="btn-icon">▶️</span>
+            Tonton Live Stream
+          </a>
+
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Profil Penjelajah</div>
+          <h2 class="section-title gradient-text">Cerita Penjelajah Galaksi Muda</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-avatar">
+            <div class="avatar-container">
+              <div class="avatar-ring"></div>
+              <div class="avatar-icon">🔭</div>
+            </div>
+          </div>
+          <div class="about-info">
+            <h3 class="about-name">Wahyu - Space Explorer</h3>
+            <p class="about-description">
+              Dari kecil, aku selalu terpesona dengan bintang-bintang di langit malam. Sekarang, sebagai penjelajah galaksi muda, aku mendedikasikan separuh waktuku untuk mengeksplorasi misteri alam semesta dan berbagi pengetahuan kosmik dengan
+              sesama earthlings.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-number">127+</div>
+                <div class="stat-label">Artikel Kosmik</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">2K+</div>
+                <div class="stat-label">Fellow Explorers</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exploration Section -->
+    <section id="exploration" class="exploration-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Database Kosmik</div>
+          <h2 class="section-title gradient-text">Eksplorasi Tanpa Batas</h2>
+          <p class="section-subtitle">Jelajahi artikel mendalam tentang planet, black hole, roket, dan misi NASA/SpaceX</p>
+        </div>
+        <div class="exploration-grid">
+            <!-- satu -->
+<div class="exploration-card" data-category="planets">
+  <div class="card-icon">🌍</div>
+  <h3 class="card-title">Sistem Planet</h3>
+  <p class="card-description">Eksplorasi mendalam tentang planet-planet di tata surya dan exoplanet</p>
+  
+  <a href="https://theskylive.com/3dsolarsystem" target="_blank">
+    <div class="card-link">
+      <span>Jelajahi Sekarang</span>
+      <span class="arrow">→</span>
+    </div>
+  </a>
+</div>
+
+
+          <!-- dua -->
+<div class="exploration-card" data-category="phenomena">
+  <div class="card-icon">⭐</div>
+  <h3 class="card-title">Supernova & Nebula</h3>
+  <p class="card-description">Fenomena kosmik spektakuler yang membentuk alam semesta</p>
+
+  <a href="https://hubblesite.org/images/gallery/category/nebula" target="_blank">
+    <div class="card-link">
+      <span>Jelajahi Sekarang</span>
+      <span class="arrow">→</span>
+    </div>
+  </a>
+</div>
+
+
+          <!-- tiga -->
+          <div class="exploration-card" data-category="technology">
+  <div class="card-icon">🚀</div>
+  <h3 class="card-title">Teknologi Roket</h3>
+  <p class="card-description">Inovasi terbaru dalam teknologi propulsi dan eksplorasi antariksa</p>
+
+  <a href="https://www.spacex.com/vehicles/" target="_blank">
+    <div class="card-link">
+      <span>Jelajahi Sekarang</span>
+      <span class="arrow">→</span>
+    </div>
+  </a>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Visual Spektakuler</div>
+          <h2 class="section-title gradient-text">Galeri Kosmik</h2>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item" data-image="nebula">
+            <div class="gallery-placeholder">🌌</div>
+            <div class="gallery-overlay">
+              <button class="gallery-btn">View</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-image="planet">
+            <div class="gallery-placeholder">🪐</div>
+            <div class="gallery-overlay">
+              <button class="gallery-btn">View</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-image="rocket">
+            <div class="gallery-placeholder">🚀</div>
+            <div class="gallery-overlay">
+              <button class="gallery-btn">View</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-image="galaxy">
+            <div class="gallery-placeholder">🌠</div>
+            <div class="gallery-overlay">
+              <button class="gallery-btn">View</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-image="astronaut">
+            <div class="gallery-placeholder">👨‍🚀</div>
+            <div class="gallery-overlay">
+              <button class="gallery-btn">View</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-image="satellite">
+            <div class="gallery-placeholder">🛰️</div>
+            <div class="gallery-overlay">
+              <button class="gallery-btn">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Sejarah Eksplorasi</div>
+          <h2 class="section-title gradient-text">Timeline Misi Antariksa</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">📅</div>
+            <div class="timeline-content">
+              <div class="timeline-year">2024</div>
+              <h3 class="timeline-title">Artemis III Moon Landing</h3>
+              <p class="timeline-description">Kembalinya manusia ke Bulan setelah 50+ tahun</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">📅</div>
+            <div class="timeline-content">
+              <div class="timeline-year">2023</div>
+              <h3 class="timeline-title">James Webb Deep Field</h3>
+              <p class="timeline-description">Gambar galaksi terjauh yang pernah diabadikan</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">📅</div>
+            <div class="timeline-content">
+              <div class="timeline-year">2022</div>
+              <h3 class="timeline-title">DART Mission Success</h3>
+              <p class="timeline-description">Misi pertama mengubah orbit asteroid</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">📅</div>
+            <div class="timeline-content">
+              <div class="timeline-year">2021</div>
+              <h3 class="timeline-title">Perseverance Mars Landing</h3>
+              <p class="timeline-description">Robot penjelajah terbaru mendarat di Mars</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Komunikasi Aktif</div>
+          <h2 class="section-title gradient-text">Hubungi Base Station</h2>
+          <p class="section-subtitle">Kirim sinyal ke base station untuk kolaborasi, pertanyaan, atau sekadar berbagi cerita kosmik</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">👥</div>
+            <h3 class="contact-title">Join Community</h3>
+            <p class="contact-description">Bergabung dengan 50K+ space enthusiasts</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">🛰️</div>
+            <h3 class="contact-title">Live Updates</h3>
+            <p class="contact-description">Dapatkan update misi terbaru real-time</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">🔭</div>
+            <h3 class="contact-title">Collaboration</h3>
+            <p class="contact-description">Kolaborasi proyek eksplorasi bersama</p>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Nama Astronaut" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email Koordinat" required />
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Pesan dari Bumi..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-icon">🛰️</span>
+              Kirim Transmisi
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-icon">🛰️</div>
+            <span class="logo-text">StellarVision</span>
+          </div>
+          <p class="footer-description">Eksplorasi Galaksi Tanpa Batas - Menghubungkan Bumi dengan Alam Semesta</p>
+          <p class="footer-copyright">© 2025 StellarVision | Beberapa visualisasi, data, dan materi ilmiah berasal dari NASA dan lembaga antariksa lainnya. Website ini tidak berafiliasi dengan NASA secara resmi</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal for Gallery -->
+    <div class="modal" id="galleryModal">
+      <div class="modal-content">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image" id="modalImage">🌌</div>
+          <h3 class="modal-title" id="modalTitle">Cosmic Wonder</h3>
+          <p class="modal-description" id="modalDescription">Keajaiban kosmik yang menakjubkan dari kedalaman alam semesta</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./Only-JS/BagianSemua.js"></script>
+  </body>
+</html>
